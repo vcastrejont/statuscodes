@@ -1,0 +1,60 @@
+// out: app.css
+@import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:400,300);
+
+@color1:#E76365;
+@color2:#eeeeee;
+
+#main{
+  position: relative;
+  padding: 30px 0;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(0,0,0,.9);
+  background-color: @color1;
+  //background-image: url(../img/header.png);
+  background-repeat: repeat-x;
+  height: 280px;
+  ul{
+    li{
+      list-style: none;
+      float: left;
+      margin: 0 10px;
+      a{
+        color:#fff;
+      }
+    }
+  }
+
+
+}
+.bar{
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  height: 60px;
+}
+.block{
+  //background-color: @color2;
+  padding: 20px 0;
+}
+
+
+pre {
+    padding: 9.5px;
+    margin: 0 0 10px;
+    font-size: 13px;
+    word-break: break-all;
+    word-wrap: break-word;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    &.code {
+       position: relative;
+       padding: 0;
+       font-family: 'Source Code Pro','Courier New',monospace;
+       text-shadow: none;
+       word-wrap: normal;
+       overflow: auto;
+       padding: 9px 35px 9px 9px;
+   }
+}

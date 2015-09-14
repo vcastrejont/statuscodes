@@ -1,5 +1,31 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  #main
+    .container
+      ul
+        li
+          a(href='#home') Home
+        li
+          a(href='#api') Api
+        li
+          a(href='#about') About
+      h1 Status code
+  .bar
+  .empty
+    .container
+      h2 Hello
+  .block
+    .container
+      p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in rhoncus risus. Suspendisse potenti. Morbi a enim ac augue vulputate porta. Morbi eu orci quis arcu gravida ultrices eu a erat. Maecenas mollis dapibus mauris, eget scelerisque nulla consectetur ut.
+      h4 Api
+      code http://statuscode.io/api/200
+
+      h4 Response
+      pre.code var config = {"theme":"dark",api-key:"fjhb3u2h4busifhu13u232iuiwrew"}
+               | var service = LameService.init(config)
+
+      hr
+
+
+      br
