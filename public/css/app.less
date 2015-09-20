@@ -13,7 +13,7 @@
   background-color: @color1;
   //background-image: url(../img/header.png);
   background-repeat: repeat-x;
-  height: 280px;
+  height: 180px;
   ul{
     li{
       list-style: none;
@@ -31,7 +31,7 @@
   z-index: 1;
   background: rgba(255, 255, 255, 0.95);
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-  height: 60px;
+  height: 40px;
 }
 .block{
   //background-color: @color2;
@@ -46,8 +46,9 @@ pre {
     word-break: break-all;
     word-wrap: break-word;
     background-color: #f5f5f5;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    border: 1px dotted #ccc;
+    border-radius: 5px;
+  
     &.code {
        position: relative;
        padding: 0;
@@ -55,6 +56,45 @@ pre {
        text-shadow: none;
        word-wrap: normal;
        overflow: auto;
-       padding: 9px 35px 9px 9px;
+         padding: 20px;
    }
+}
+.nav-tabs{
+    border: 0px;
+    li.active{
+      a{
+        color:#555 !important;
+        font-weight: bold;
+      }
+    }
+  &>li.active>a{
+    border: 0px;
+    border-radius:0px;
+    color:cyan;
+  }
+  > li{
+    background-color: transparent;
+    border: 0px;
+    border-radius:0px;  
+    &.active{
+      color:@color1;
+      background-color: transparent;
+      border: 0px;
+      border-radius:0px;  
+    }
+    >a{
+      padding: 5px 10px 5px 0;
+      color:@color1 !important;
+      background-color: transparent;
+      border: 0px;
+      border-radius:0px;  
+      &:hover, &:focus {
+        color:#aaa;
+        background-color: transparent;
+        border: 0px !important;
+        border-radius:0px;  
+      }
+    
+    }
+  }
 }

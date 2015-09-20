@@ -19,13 +19,36 @@ block content
     .container
       p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in rhoncus risus. Suspendisse potenti. Morbi a enim ac augue vulputate porta. Morbi eu orci quis arcu gravida ultrices eu a erat. Maecenas mollis dapibus mauris, eget scelerisque nulla consectetur ut.
       h4 Api
-      code http://statuscode.io/api/200
+      code http://statuscode.io/api/100
 
       h4 Response
-      pre.code var config = {"theme":"dark",api-key:"fjhb3u2h4busifhu13u232iuiwrew"}
-               | var service = LameService.init(config)
-
+      
+      ul.nav.nav-tabs(role='tablist')
+        li.active
+          a(href='#success', role='tab' data-toggle='tab') Success
+        li
+          a(href='#failure', role='tab' data-toggle='tab') Failure
+      
+  
+      .tab-content
+        #success.tab-pane.active(role='tabpanel')
+          pre.code {
+            |"number"    : 100,
+            |"status"    : "Continue",
+            |"short"     : "Client should continue with request",
+            |"long"      : "Server has received the request headers, and that the client should proceed to send the request body...",
+            |"easy"      : "Everthing is fine ",
+            |"icon"      : "100.png",
+            |"useCases"  : "useCases":[ 
+            |               "success", 
+            |               "with content in header"
+            |               ],
+            | }
+        #failure.tab-pane.fade(role='tabpanel')
+          pre.code {
+            |error: true,
+            |message: "Error not recognitzed",
+            |}
+      p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in rhoncus risus. Suspendisse potenti. Morbi a enim ac augue vulputate porta. Morbi eu orci quis arcu gravida ultrices eu a erat. Maecenas mollis dapibus mauris, eget scelerisque nulla consectetur ut.
       hr
-
-
-      br
+      p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in rhoncus risus. Suspendisse potenti. Morbi a enim ac augue vulputate porta. Morbi eu orci quis arcu gravida ultrices eu a erat. Maecenas mollis dapibus mauris, eget scelerisque nulla consectetur ut.
